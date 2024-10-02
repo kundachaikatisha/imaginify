@@ -1,5 +1,5 @@
 import React from 'react'
-import TransformationForm from './TransformationForm'
+
 
 const Header = ({ title, subtitle}: {title: string, subtitle?: string}) => {
   return (
@@ -9,7 +9,7 @@ const Header = ({ title, subtitle}: {title: string, subtitle?: string}) => {
         {subtitle && <p className="p-16-regular mt-4"> {subtitle} </p>}
       </>
 
-      <TransformationForm/>
+
     </>
 
   )
