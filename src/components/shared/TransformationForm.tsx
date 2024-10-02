@@ -35,9 +35,7 @@ export const formSchema = z.object({
   publicId: z.string(),
 })
 
-
-const TransformationForm = ({ action, data = null, userId, type, creditBalance}: TransformationFormProps )
- => {
+const TransformationForm = ({ action, data = null, userId, type, creditBalance}: TransformationFormProps )=> {
   const transformationType=transformationTypes[type];
   const [image, setImage] = useState(data)
   const [newTransformation, setNewTransformation] = useState<Transformations | null>(null);
@@ -63,7 +61,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance}:
     console.log(values)
   }
 
-  const onSelectFieldHandler = (value: string, onChangeField: (value: string) => void) {
+  const onSelectFieldHandler = (value: string, onChangeField: (value: string) => void) => {
 
   }
 
